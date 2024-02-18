@@ -1,4 +1,5 @@
 import TriangleCalculator from '@/components/TriangleCalculator'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -7,6 +8,12 @@ export default function Home() {
         Extremely Cool Triangle Calculator WoW 🧮 🔥
       </h1>
       <TriangleCalculator />
+      <Link
+        className="text-sm text-muted-foreground justify-self-center hover:underline"
+        href="https://github.com/lucasbsartor"
+      >
+        Lazily made by @lucasbsartor
+      </Link>
     </main>
   )
 }
